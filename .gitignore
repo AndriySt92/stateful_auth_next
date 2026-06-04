@@ -10,8 +10,12 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
+# .prettierignore
+.next
+out
+build
+node_modules
+coverage
 
 # next.js
 /.next/
