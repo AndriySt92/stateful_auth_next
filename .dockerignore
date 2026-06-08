@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+coverage
+
+# Local environment files
+.env.local
+.env.*.local
+
+# Git & next
+.next
+.git
+.gitignore
+
+# IDE / editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs & temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Husky & git hooks
+.husky
+
+# Misc configs (optional – keep what you need for build)
+prettier.config.mjs
+eslint.config.mjs
+
+# Dockerfile & docker-compose
+Dockerfile
+docker-compose.yml
+
+# Readme & other docs
+README.md
