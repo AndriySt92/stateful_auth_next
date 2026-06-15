@@ -2,17 +2,19 @@
 
 import { type PropsWithChildren } from 'react';
 
-import { ThemeProvider } from './';
+import { TanstackQueryProvider, ThemeProvider } from './';
 
 export function Providers({ children }: PropsWithChildren<unknown>) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="light"
-      disableTransitionOnChange
-      storageKey="theme"
-    >
-      {children}
-    </ThemeProvider>
+    <TanstackQueryProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        disableTransitionOnChange
+        storageKey="theme"
+      >
+        {children}
+      </ThemeProvider>
+    </TanstackQueryProvider>
   );
 }
