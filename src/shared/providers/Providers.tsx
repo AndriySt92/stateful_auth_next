@@ -2,7 +2,7 @@
 
 import { type PropsWithChildren } from 'react';
 
-import { TanstackQueryProvider, ThemeProvider } from './';
+import { RecaptchaProvider, TanstackQueryProvider, ThemeProvider } from './';
 
 export function Providers({ children }: PropsWithChildren<unknown>) {
   return (
@@ -13,7 +13,7 @@ export function Providers({ children }: PropsWithChildren<unknown>) {
         disableTransitionOnChange
         storageKey="theme"
       >
-        {children}
+        <RecaptchaProvider>{children}</RecaptchaProvider>
       </ThemeProvider>
     </TanstackQueryProvider>
   );
